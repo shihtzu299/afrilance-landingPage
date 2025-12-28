@@ -99,15 +99,24 @@ function App() {
         );
       
 
-      {/* Header Navigation */}
-      <header className="absolute top-0 left-0 right-0 z-20 px-6 py-6 flex justify-end gap-10">
-        <a href="/pitchdeck.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
-          Pitchdeck
-        </a>
-        <a href="/whitepaper.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
-          Whitepaper
-        </a>
-      </header>
+      {/* Header - Logo top left + Nav top right */}
+  <header className="absolute top-0 left-0 right-0 z-20 px-6 py-6 flex justify-between items-center">
+    <a href="/" className="flex items-center gap-3">
+    <img src="/logo.png" alt="AfriLance Logo" className="h-12 w-12" />
+    <span className="text-2xl font-bold bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent">
+      AfriLance
+    </span>
+  </a>
+
+  <div className="flex gap-10">
+    <a href="/pitchdeck.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
+      Pitchdeck
+    </a>
+    <a href="/whitepaper.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
+      Whitepaper
+    </a>
+  </div>
+</header>
 
       {/* Hero */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
