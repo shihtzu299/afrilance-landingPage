@@ -103,9 +103,6 @@ function App() {
   <header className="absolute top-0 left-0 right-0 z-20 px-6 py-6 flex justify-between items-center">
     <a href="/" className="flex items-center gap-3">
     <img src="/logo.png" alt="AfriLance Logo" className="h-12 w-12" />
-    <span className="text-2xl font-bold bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent">
-      AfriLance
-    </span>
   </a>
 
   <div className="flex gap-10">
