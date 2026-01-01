@@ -127,15 +127,15 @@ function App() {
         <div className="flex flex-col sm:flex-row gap-8">
           <a
             href="https://forje.vercel.app/"
-            className="px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+            className="px-5 py-2.5 text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
           >
             Launch Escrow
           </a>
           <button
-            className="px-10 py-5 text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300"
+            className="px-5 py-2.5 text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300"
             disabled
           >
-            Gigs Marketplace → Coming Q1 2026
+            Gigs Marketplace
           </button>
         </div>
       </div>
