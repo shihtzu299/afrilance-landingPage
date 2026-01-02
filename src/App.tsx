@@ -126,7 +126,7 @@ function App() {
 
         <div className="flex flex-col sm:flex-row gap-8">
           <a
-            href="https://forje.vercel.app/"
+            href="https://escrow.afrilance.xyz/"
             className="px-5 py-2.5 text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
           >
             Launch Escrow
@@ -144,22 +144,26 @@ function App() {
       <footer className="relative z-10 py-8 text-center">
         <p className="text-gray-500 text-sm mb-4">Connect with us</p>
         <div className="flex justify-center gap-8">
-          <a href="https://t.me/theforjebot" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
+          <a href="https://t.me/AfriLance_bot" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
             <FaTelegramPlane size={32} />
             <p className="text-xs mt-1 text-gray-400">Bot</p>
           </a>
-          <a href="https://t.me/theforje" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
+          <a href="https://t.me/AfriLanceCommunity" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
             <FaTelegramPlane size={32} />
             <p className="text-xs mt-1 text-gray-400">Group</p>
           </a>
-          <a href="https://x.com/theforje" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition">
+          <a href="https://x.com/AfriLanceHQ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition">
             <FaTwitter size={32} />
             <p className="text-xs mt-1 text-gray-400">X</p>
           </a>
         </div>
 
+        <p className="text-gray-600 text-xs mt-4">
+          support@afrilance.xyz
+        </p>
+
         <p className="text-gray-600 text-xs mt-8">
-          © 2025 AfriLance — Empowering African Freelancers
+          © 2025 AfriLance - Empowering African Freelancers
         </p>
       </footer>
     </div>
