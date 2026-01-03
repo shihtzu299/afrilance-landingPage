@@ -109,7 +109,7 @@ function App() {
     <a href="/pitchdeck.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
       Pitchdeck
     </a>
-    <a href="/whitepaper.pdf" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
+    <a href="https://afrilance.gitbook.io/afrilance-docs/" className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition">
       Whitepaper
     </a>
   </div>
