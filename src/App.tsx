@@ -124,7 +124,7 @@ function App() {
             Pitchdeck
           </a>
           <a
-            href="https://afrilance.gitbook.io/afrilance-docs/"
+            href="https://wooded-budget-e6b.notion.site/AFRILANCE-DOCS-8b0fee32bf6c4ee784edcf18cb8b1872"
             className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition"
           >
             Docs
