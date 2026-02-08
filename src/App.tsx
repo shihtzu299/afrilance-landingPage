@@ -119,7 +119,7 @@ function App() {
 
         <div className="flex gap-10">
           <a
-            href="https://wooded-budget-e6b.notion.site/AFRILANCE-DOCS-8b0fee32bf6c4ee784edcf18cb8b1872"
+            href="https://wooded-budget-e6b.notion.site/AfriLance-Documentation-Hub-v2-301cdfc6438080048655cf726ec29eac"
             target="_blank"
             rel="noopener noreferrer"
             className="text-base sm:text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition inline-flex items-center gap-2"
@@ -147,7 +147,6 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-auto">
             <a
               href="https://escrow.afrilance.xyz/"
-              target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-5 py-3 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
             >
@@ -222,7 +221,7 @@ function App() {
           </a>
 
           <a
-            href="https://github.com/shihtzu299/AfriLance-Frontend"
+            href="https://github.com/shihtzu299"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition"
