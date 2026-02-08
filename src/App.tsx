@@ -6,6 +6,7 @@ import {
   FaYoutube,
   FaGithub,
   FaTwitter,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 function App() {
@@ -111,53 +112,70 @@ function App() {
       />
 
       {/* Header - Logo top left + Nav top right */}
-      <header className="absolute top-0 left-0 right-0 z-20 px-6 py-6 flex justify-between items-center">
+      <header className="absolute top-0 left-0 right-0 z-20 px-5 sm:px-6 py-5 sm:py-6 flex justify-between items-center">
         <a href="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="AfriLance Logo" className="h-12 w-12" />
         </a>
 
         <div className="flex gap-10">
           <a
-            href="/pitchdeck.pdf"
-            className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition"
-          >
-            Pitchdeck
-          </a>
-          <a
             href="https://wooded-budget-e6b.notion.site/AFRILANCE-DOCS-8b0fee32bf6c4ee784edcf18cb8b1872"
-            className="text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base sm:text-lg font-semibold text-gray-300 hover:text-[#00ffea] transition inline-flex items-center gap-2"
           >
-            Docs
+            Read Docs
+            <FaExternalLinkAlt className="opacity-80" size={14} />
           </a>
         </div>
       </header>
 
-      <main className="flex-grow">
+      <main className="flex-grow pt-28 sm:pt-32">
         {/* Hero */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[85vh] px-6 text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] sm:min-h-[85vh] px-6 text-center">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent">
             AfriLance
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-16 leading-relaxed">
-            AI powered decentralized gigs marketplace and freelance payments
-            powered by BNB/Base chain for African talent, using stablecoins
-            (USDT/USDC) as settlement tokens.
+
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 sm:mb-16 leading-relaxed">
+            Secure payments and instant paylinks for the on-chain economy. Send,
+            receive, and protect stablecoin payments across Base and BNB Chain.
+            Whether you need trusted escrow for freelance payments or simple
+            links for everyday funds transfer.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-8">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-auto">
             <a
               href="https://escrow.afrilance.xyz/"
-              className="px-5 py-2.5 text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-5 py-3 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
             >
-              Launch Escrow
+              Freelance Escrow
             </a>
-            <button
-              className="px-5 py-2.5 text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300"
-              disabled
-            >
-              Gigs Marketplace
-            </button>
+
+            <div className="relative w-full sm:w-auto group">
+              <button
+                className="w-full sm:w-auto px-5 py-3 text-base sm:text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300 cursor-not-allowed"
+                disabled
+              >
+                Create PayLink
+              </button>
+
+              {/* Tooltip */}
+              <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 -top-3 -translate-y-full opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-200">
+                <div className="whitespace-nowrap rounded-xl bg-black/80 border border-gray-700 px-3 py-2 text-xs text-gray-200 shadow-xl">
+                  Coming soon on Base & BNB
+                </div>
+                <div className="mx-auto mt-1 h-2 w-2 rotate-45 bg-black/80 border-r border-b border-gray-700" />
+              </div>
+            </div>
           </div>
+
+          <p className="mt-6 text-xs sm:text-sm text-gray-400">
+            Works best with USDC on Base & USDT on BNB Chain • No banks • No
+            delays
+          </p>
         </div>
       </main>
 
