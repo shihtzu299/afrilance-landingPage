@@ -170,10 +170,9 @@ function App() {
               </div>
             </div>
           </div>
-
+          
           <p className="mt-6 text-xs sm:text-sm text-gray-400">
-            Works best with USDC on Base & USDT on BNB Chain • No banks • No
-            delays
+            Use Testnet tokens; USDC on Base Sepolia & USDT on BNB Testnet.
           </p>
         </div>
       </main>
