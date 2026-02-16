@@ -148,14 +148,14 @@ function App() {
             <a
               href="https://escrow.afrilance.xyz/"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-5 py-3 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+              className="w-full sm:w-auto px-5 py-2 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
             >
               Freelance Escrow
             </a>
 
             <div className="relative w-full sm:w-auto group">
               <button
-                className="w-full sm:w-auto px-5 py-3 text-base sm:text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300 cursor-not-allowed"
+                className="w-full sm:w-auto px-5 py-2 text-base sm:text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300 cursor-not-allowed"
                 disabled
               >
                 Create PayLink
@@ -170,7 +170,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <p className="mt-6 text-xs sm:text-sm text-gray-400">
             Use Testnet tokens; USDC on Base Sepolia & USDT on BNB Testnet.
           </p>
