@@ -224,7 +224,7 @@ function App() {
         <p className="text-gray-600 text-xs mt-4">support@afrilance.xyz</p>
 
         <p className="text-gray-600 text-xs mt-8">
-          © 2026 AfriLance - Empowering Freelancers
+          © 2026 AfriLance - Infrastructure for the Open Economy
         </p>
       </footer>
     </div>
