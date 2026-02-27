@@ -153,22 +153,13 @@ function App() {
               Freelance Escrow
             </a>
 
-            <div className="relative w-full sm:w-auto group">
-              <button
-                className="w-full sm:w-auto px-5 py-2 text-base sm:text-xl font-bold rounded-2xl bg-gray-800/60 backdrop-blur border border-gray-700 hover:bg-gray-700/50 transition-all duration-300 cursor-not-allowed"
-                disabled
-              >
-                Create PayLink
-              </button>
-
-              {/* Tooltip */}
-              <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 -top-3 -translate-y-full opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-200">
-                <div className="whitespace-nowrap rounded-xl bg-black/80 border border-gray-700 px-3 py-2 text-xs text-gray-200 shadow-xl">
-                  Coming soon on Base & BNB
-                </div>
-                <div className="mx-auto mt-1 h-2 w-2 rotate-45 bg-black/80 border-r border-b border-gray-700" />
-              </div>
-            </div>
+            <a
+              href="https://pay.afrilance.xyz/"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-5 py-2 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#184d1f] to-[#1c6b4a] text-[#f8f8fa] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+            >
+              Launch PayLink
+            </a>
           </div>
 
           <p className="mt-6 text-xs sm:text-sm text-gray-400">
