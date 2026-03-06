@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -37,6 +37,142 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+/* ===============================
+   GLOBAL TOP-RIGHT NAV (Docs)
+   =============================== */
+
+.globalNav {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.globalNav__docs {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  /* ✅ remove pill look */
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    color 150ms ease,
+    transform 150ms ease;
+}
+
+.globalNav__docs:hover {
+  color: #00ffea;
+  transform: translateY(-1px);
+}
+
+/* Mobile wrapper hidden on desktop */
+.globalNav__mobile {
+  display: none;
+  position: relative;
+}
+
+.globalNav__hamburger {
+  width: 40px;
+  height: 40px;
+
+  /* ✅ remove circle look */
+  border-radius: 0;
+  background: transparent;
+  border: none;
+
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e5e7eb;
+  font-size: 18px;
+  transition:
+    color 150ms ease,
+    transform 150ms ease;
+}
+
+.globalNav__hamburger:hover {
+  color: #00ffea;
+  transform: translateY(-1px);
+}
+
+/* Dropdown menu */
+.globalNav__dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 180px;
+  background: rgba(2, 6, 23, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* Dropdown item */
+.globalNav__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.globalNav__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ✅ Mobile breakpoint: hide desktop link, show hamburger */
+@media (max-width: 640px) {
+  .globalNav__docs {
+    display: none;
+  }
+
+  .globalNav__mobile {
+    display: block;
+  }
+}
+
+.metricCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.metricCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 255, 234, 0.4);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 234, 0.18),
+    0 0 24px rgba(0, 255, 234, 0.12),
+    0 0 48px rgba(0, 102, 255, 0.1);
+}
+
+.metricCard:active {
+  transform: translateY(-1px);
 }
