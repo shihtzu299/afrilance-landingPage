@@ -289,7 +289,7 @@ function App() {
               onHover: { enable: true, mode: "repulse" },
               resize: { enable: true },
             },
-            modes: { repulse: { distance: 100, duration: 0.4 } },
+            modes: { repulse: { distance: 180, duration: 0.5 } },
           },
           particles: {
             color: { value: ["#00ffea", "#0066ff"] },
@@ -381,7 +381,7 @@ function App() {
       <main className="flex-grow pt-28 sm:pt-32">
         {/* Hero */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] sm:min-h-[85vh] px-6 text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(0,255,234,0.35)]">
             AfriLance
           </h1>
 
@@ -466,7 +466,10 @@ function App() {
             <a
               href="https://escrow.afrilance.xyz/"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-5 py-2 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#00ffea] to-[#0066ff] text-[#050816] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+              className="ctaBtn w-full sm:w-auto px-4 py-2 text-base sm:text-lg font-semibold rounded-xl
+bg-gradient-to-r from-[#00ffea] via-[#00cfff] to-[#0066ff]
+text-[#050816] shadow-md hover:shadow-[0_0_20px_rgba(0,255,234,0.5)]
+transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-[1.02]"
             >
               Use Escrow
             </a>
@@ -474,7 +477,10 @@ function App() {
             <a
               href="https://pay.afrilance.xyz/"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-5 py-2 text-lg sm:text-xl font-bold rounded-2xl bg-gradient-to-r from-[#184d1f] to-[#1c6b4a] text-[#f8f8fa] shadow-2xl hover:shadow-[#00ffea]/50 transition-all duration-300"
+              className="ctaBtn w-full sm:w-auto px-4 py-2 text-base sm:text-lg font-semibold rounded-xl
+bg-gradient-to-r from-[#184d1f] via-[#1c6b4a] to-[#2ea66f]
+text-[#f8f8fa] shadow-md hover:shadow-[0_0_20px_rgba(46,166,111,0.5)]
+transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-[1.02]"
             >
               Create PayLink
             </a>

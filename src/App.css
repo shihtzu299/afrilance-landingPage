@@ -176,3 +176,7 @@
 .metricCard:active {
   transform: translateY(-1px);
 }
+
+button:hover {
+  filter: brightness(1.05);
+}
