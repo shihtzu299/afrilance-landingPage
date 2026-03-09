@@ -1,4 +1,3 @@
-```markdown
 # AfriLance Landing Page
 
 Official landing page for **AfriLance**, a Web3 payment infrastructure enabling secure on-chain payments through decentralized escrow and shareable paylinks.
