@@ -5,15 +5,39 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050816;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -53,25 +77,24 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
-  /* ✅ remove pill look */
   padding: 0;
   background: transparent;
   border: none;
   border-radius: 0;
-
   color: #d1d5db;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
   transition:
     color 150ms ease,
-    transform 150ms ease;
+    transform 150ms ease,
+    text-shadow 150ms ease;
 }
 
 .globalNav__docs:hover {
   color: #00ffea;
   transform: translateY(-1px);
+  text-shadow: 0 0 10px rgba(0, 255, 234, 0.28);
 }
 
 /* Mobile wrapper hidden on desktop */
@@ -83,27 +106,25 @@
 .globalNav__hamburger {
   width: 40px;
   height: 40px;
-
-  /* ✅ remove circle look */
   border-radius: 0;
   background: transparent;
   border: none;
-
   padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   color: #e5e7eb;
   font-size: 18px;
   transition:
     color 150ms ease,
-    transform 150ms ease;
+    transform 150ms ease,
+    text-shadow 150ms ease;
 }
 
 .globalNav__hamburger:hover {
   color: #00ffea;
   transform: translateY(-1px);
+  text-shadow: 0 0 10px rgba(0, 255, 234, 0.28);
 }
 
 /* Dropdown menu */
@@ -130,10 +151,14 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  transition:
+    background 150ms ease,
+    color 150ms ease;
 }
 
 .globalNav__item:hover {
   background: rgba(255, 255, 255, 0.06);
+  color: #00ffea;
 }
 
 /* ✅ Mobile breakpoint: hide desktop link, show hamburger */
@@ -147,6 +172,10 @@
   }
 }
 
+/* ===============================
+   LIVE METRIC CARDS
+   =============================== */
+
 .metricCard {
   display: block;
   text-decoration: none;
@@ -156,6 +185,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   padding: 1rem;
+  min-height: 112px;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -177,6 +207,369 @@
   transform: translateY(-1px);
 }
 
+/* ===============================
+   GENERAL SECTION POLISH
+   =============================== */
+
+section {
+  scroll-margin-top: 110px;
+}
+
+a {
+  transition:
+    color 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+}
+
 button:hover {
   filter: brightness(1.05);
+}
+
+.ctaBtn {
+  position: relative;
+  z-index: 5;
+  text-decoration: none;
+}
+
+.ctaBtn:hover {
+  filter: brightness(1.04);
+}
+
+main {
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 255, 234, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(0, 102, 255, 0.06),
+      transparent 40%
+    ),
+    linear-gradient(#050816, #040611);
+}
+
+/* ===============================
+   PRODUCT / FEATURE / FAQ CARDS
+   =============================== */
+
+.glassCard {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+}
+
+.softHover {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.softHover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 255, 234, 0.22);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 234, 0.08),
+    0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   FOOTER POLISH
+   =============================== */
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   SCROLLBAR
+   =============================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07101d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 234, 0.28);
+}
+
+/* ===============================
+   RESPONSIVE REFINEMENTS
+   =============================== */
+
+@media (max-width: 1024px) {
+  .metricCard {
+    padding: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .metricCard {
+    border-radius: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #root {
+    text-align: center;
+  }
+
+  .globalNav__dropdown {
+    width: 170px;
+  }
+
+  .metricCard {
+    padding: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .globalNav__hamburger {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .globalNav__dropdown {
+    width: 160px;
+  }
+
+  .globalNav__item {
+    font-size: 13px;
+    padding: 11px 12px;
+  }
+
+  .metricCard {
+    padding: 0.9rem;
+  }
+}
+
+/* ===============================
+   SUPPORTED CHAINS
+   =============================== */
+
+.chainBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 160px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(3, 10, 24, 0.42);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.chainBadge__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.chainBadge__dot--base {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.45);
+}
+
+.chainBadge__dot--bnb {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
+}
+
+.chainBadge__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f3f4f6;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.chainBadge__subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+  text-align: left;
+}
+
+/* ===============================
+   TRUST / INFRASTRUCTURE BAND
+   =============================== */
+
+.trustBand {
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(0, 255, 234, 0.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 102, 255, 0.08),
+      transparent 30%
+    ),
+    rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.18);
+  padding: 24px;
+}
+
+.trustBand__intro {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.trustBand__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.trustPill {
+  text-align: left;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(2, 6, 23, 0.42);
+  padding: 18px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.trustPill:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 255, 234, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 234, 0.06),
+    0 14px 30px rgba(0, 0, 0, 0.18);
+  background: rgba(2, 6, 23, 0.52);
+}
+
+.trustPill__kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(103, 232, 249, 0.82);
+  margin-bottom: 10px;
+}
+
+.trustPill__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.trustPill__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 900px) {
+  .trustBand__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .trustBand {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .chainBadge {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .trustPill {
+    padding: 16px;
+  }
+
+  .trustPill__title {
+    font-size: 17px;
+  }
+}
+
+/* ===============================
+   SUPPORTED CHAINS PREMIUM TWEAK
+   =============================== */
+
+.supportedStrip {
+  position: relative;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.supportedStrip::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.supportedStrip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 255, 234, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 234, 0.06),
+    0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+.chainLogo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.chainBadge:hover .chainLogo {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 234, 0.22));
 }
