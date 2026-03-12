@@ -462,7 +462,7 @@ function App() {
 
           <div className="relative z-10 flex flex-col items-center justify-center w-full">
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#00ffea] to-[#0066ff] bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(0,255,234,0.35)]">
-              AfriLance
+              AFRILANCE
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 sm:mb-20 leading-relaxed">
