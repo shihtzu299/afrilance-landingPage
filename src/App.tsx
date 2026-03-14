@@ -72,6 +72,7 @@ const PRODUCT_CARDS = [
       "Milestone-style payment protection",
       "Client and freelancer role separation",
       "On-chain status tracking and settlement",
+      "Dispute resolution by UMA Optimistic Oracle",
     ],
     href: "https://escrow.afrilance.xyz/",
     cta: "Use Escrow",
@@ -86,6 +87,7 @@ const PRODUCT_CARDS = [
       "Simple payment request flow",
       "Shareable URL-based payment experience",
       "Fast stablecoin settlement across supported chains",
+      "QR code invoice image sharing",
     ],
     href: "https://pay.afrilance.xyz/",
     cta: "Create PayLink",
@@ -466,9 +468,8 @@ function App() {
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 sm:mb-20 leading-relaxed">
-              Get paid in stablecoins with shareable Paylinks and protected
-              Escrow. Built for freelancers and crypto-native clients on Base
-              and BNB Chain.
+              Stablecoin payments made simple: share Paylinks, secure jobs with
+              on-chain Escrow, and get paid globally on Base and BNB Chain.
             </p>
 
             {/* Live counters */}
@@ -538,7 +539,7 @@ function App() {
               </div>
 
               <div className="text-xs text-gray-500 mt-3">
-                Live on Base & BNB Chain — All payments verifiable on-chain.
+                Live on Base & BNB Chain testnets — All payments verifiable on-chain.
               </div>
             </div>
           </div>
@@ -592,7 +593,7 @@ function App() {
                 </h2>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl">
                   AfriLance combines smart contract payment flows, stablecoin
-                  settlement, and chain-native transparency to support freelance
+                  settlement, oracle dispute settlement, and chain-native transparency to support freelance
                   work and direct payment collection.
                 </p>
               </div>
