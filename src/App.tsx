@@ -383,6 +383,24 @@ function App() {
                 Read Docs
                 <FaExternalLinkAlt className="opacity-80" size={14} />
               </a>
+              <a
+                href="https://escrow.afrilance.xyz"
+                target=""
+                rel="noopener noreferrer"
+                className="globalNav__docs"
+                onClick={() => setShowNavMenu(false)}
+              >
+                Escrow
+              </a>
+              <a
+                href="https://pay.afrilance.xyz"
+                target=""
+                rel="noopener noreferrer"
+                className="globalNav__docs"
+                onClick={() => setShowNavMenu(false)}
+              >
+                PayLinks
+              </a>
 
               <div className="globalNav__mobile">
                 <button
@@ -413,6 +431,24 @@ function App() {
                     >
                       Read Docs
                       <FaExternalLinkAlt className="opacity-80" size={14} />
+                    </a>
+                    <a
+                      href="https://escrow.afrilance.xyz"
+                      target=""
+                      rel="noopener noreferrer"
+                      className="globalNav__item"
+                      onClick={() => setShowNavMenu(false)}
+                    >
+                      Escrow
+                    </a>
+                    <a
+                      href="https://pay.afrilance.xyz"
+                      target=""
+                      rel="noopener noreferrer"
+                      className="globalNav__item"
+                      onClick={() => setShowNavMenu(false)}
+                    >
+                      PayLinks
                     </a>
                   </div>
                 )}
@@ -539,7 +575,8 @@ function App() {
               </div>
 
               <div className="text-xs text-gray-500 mt-3">
-                Live on Base & BNB Chain testnets — All payments verifiable on-chain.
+                Live on Base & BNB Chain testnets — All payments verifiable
+                on-chain.
               </div>
             </div>
           </div>
@@ -593,8 +630,9 @@ function App() {
                 </h2>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl">
                   AfriLance combines smart contract payment flows, stablecoin
-                  settlement, oracle dispute settlement, and chain-native transparency to support freelance
-                  work and direct payment collection.
+                  settlement, oracle dispute settlement, and chain-native
+                  transparency to support freelance work and direct payment
+                  collection.
                 </p>
               </div>
 
